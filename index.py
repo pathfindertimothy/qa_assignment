@@ -27,7 +27,7 @@ def process_monitor():
 
     for p in psutil.process_iter(['name']):
         if p.info['name'] == process_name:
-            cpu = p.cpu_percent(interval=1) / psutil.cpu_count()
+            cpu = p.cpu_percent(interval=0.1) / psutil.cpu_count()
 
             memory_mb = p.memory_full_info().rss / (1024*1024)
             memory = p.memory_percent()
