@@ -3,12 +3,6 @@ __Email__ = "pathfindertimothy@gmail.com"
 __Date__ = "20-November-2023"
 __Platform__ = "Windows 11"
 
-# install psutil using pip3 install psutil
-# install schedule using pip3 install schedule
-# install openpyxl using pip3 install schedule
-
-# process name used for this test: ApplicationFrameHost
-
 import psutil,datetime,time,schedule,openpyxl
 from open_handles import open_handles
 
